@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111318">
+  <title>iPhone Simulator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="stage">
+    <section class="phone" aria-label="iPhone 시뮬레이터">
+      <div class="wallpaper" id="wallpaper"></div>
+      <div class="statusbar">
+        <span id="status-time">9:41</span>
+        <div class="island" aria-label="Dynamic Island"></div>
+        <span class="status-icons">● ▰ ▰</span>
+      </div>
+      <section class="lock-screen screen active" id="lock-screen">
+        <div class="lock-date" id="lock-date">10월 21일 수요일</div>
+        <div class="lock-clock" id="lock-clock">9:41</div>
+        <div class="lock-notifications" id="lock-notifications"></div>
+        <div class="lock-bottom">
+          <button class="round-control" aria-label="손전등" data-toast="손전등은 시뮬레이션 기능입니다.">◉</button>
+          <button class="round-control" aria-label="카메라" data-open="camera">⌁</button>
+        </div>
+        <button class="unlock-hint" id="unlock-btn">위로 쓸어올려 열기 <span>⌃</span></button>
+      </section>
+      <section class="home-screen screen" id="home-screen">
+        <div class="home-date" id="home-date">수요일, 10월 21일</div>
+        <div class="app-grid" id="app-grid">
+          <button class="app" data-open="messages"><span class="app-icon messages-icon">▰</span><span>메시지</span></button>
+          <button class="app" data-open="photos"><span class="app-icon photos-icon">✿</span><span>사진</span></button>
+          <button class="app" data-open="phone"><span class="app-icon phone-icon">☎</span><span>전화</span></button>
+          <button class="app" data-open="music"><span class="app-icon music-icon">♫</span><span>음악</span></button>
+          <button class="app" data-open="contacts"><span class="app-icon contacts-icon">♟</span><span>연락처</span></button>
+          <button class="app" data-open="notes"><span class="app-icon notes-icon">▤</span><span>메모</span></button>
+          <button class="app" data-open="settings"><span class="app-icon settings-icon">⚙</span><span>설정</span></button>
+          <button class="app" data-open="safari"><span class="app-icon safari-icon">◎</span><span>Safari</span></button>
+        </div>
+        <div class="widget">
+          <div><strong id="widget-title">오늘의 기록</strong><p id="widget-text">나만의 작은 디지털 공간</p></div>
+          <span class="widget-mark">✦</span>
+        </div>
+        <div class="dock">
+          <button class="app" data-open="phone"><span class="app-icon phone-icon">☎</span></button>
+          <button class="app" data-open="messages"><span class="app-icon messages-icon">▰</span></button>
+          <button class="app" data-open="music"><span class="app-icon music-icon">♫</span></button>
+          <button class="app" data-open="photos"><span class="app-icon photos-icon">✿</span></button>
+        </div>
+      </section>
+      <section class="app-screen screen" id="app-screen">
+        <header class="app-header">
+          <button class="back-btn" id="back-home" aria-label="홈으로">‹</button>
+          <div><h1 id="app-title">메시지</h1><p id="app-subtitle">대화</p></div>
+          <button class="header-action" id="app-action" aria-label="추가">＋</button>
+        </header>
+        <div class="app-content" id="app-content"></div>
+        <div class="home-indicator" id="home-indicator"></div>
+      </section>
+      <div class="toast" id="toast" role="status"></div>
+    </section>
+    <aside class="side-panel">
+      <div class="eyebrow">INTERACTIVE WEB EXPERIENCE</div>
+      <h1>나만의 iPhone</h1>
+      <p>링크를 연 사람이 앱을 눌러 둘러보고, 설정한 메시지 시나리오와 사진을 체험하는 웹 시뮬레이터입니다.</p>
+      <div class="side-actions">
+        <a class="primary-link" href="./admin.html">관리자 페이지 열기 ↗</a>
+        <button class="secondary-button" id="relock">잠금 화면 보기</button>
+      </div>
+      <div class="notice"><strong>안내</strong><br>웹 기반 시뮬레이터이며 실제 iOS, SMS, 전화망과 연결되지 않습니다. 관리자 편집은 이 초기 버전에서 현재 브라우저에 저장됩니다. 여러 기기에 설정을 동기화하려면 인증된 서버/데이터베이스 연결이 필요합니다.</div>
+      <div class="side-footer">GitHub Pages에 배포 가능한 정적 웹 프로젝트</div>
+    </aside>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
